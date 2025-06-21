@@ -9,7 +9,14 @@ LOWER_WHITE = np.array([0, 0, 130])
 UPPER_WHITE = np.array([180, 50, 255])  
 #----------------------------------------------------------------------------    
 # Configuração da porta serial    
-s = serial.Serial('COM1', 9600, 8, 1) #Olhar o Read.me em caso de dúvidas
+import serial
+s = serial.Serial(
+    port='COM1',
+    baudrate=9600,
+    bytesize=serial.EIGHTBITS, 
+    parity=serial.PARITY_NONE,   
+    stopbits=serial.STOPBITS_ONE 
+) #Olhar o Read.me em caso de dúvidas
 # Configuração da câmera
 cap = cv2.VideoCapture(0)
 
