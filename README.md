@@ -1,4 +1,4 @@
-# Visão computacional passo 1 (UM) - Bola branca em um fundo branco
+# Visão computacional passo 1 (UM) - Bola branca em um fundo preto
 ## 📖 Sobre o Projeto
 
 A primeira parte do projeto conhecido como BallInPlate, 
